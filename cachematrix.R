@@ -1,7 +1,8 @@
-## Put comments here that give an overall description of what your
-## functions do
+##These functions will create a matrix & then cache the inverse of the matrix for future use.
+##Especially useful with a large matrix whose inverse will be referenced multiple times
 
-## Write a short comment describing this function
+##This function is similar to the mean example and will create & cache a matrix.
+##Also provides the infrastructure to cache the inverse.
 
 makeCacheMatrix <- function(x = matrix()) {
         m<-NULL
@@ -19,7 +20,7 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## This function calculates the inverse of the pre-defined matrix & caches it.
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
